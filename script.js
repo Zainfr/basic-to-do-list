@@ -14,11 +14,11 @@ function RenderToDo() {
     const name = todoObejct.name;
     const dueDate = todoObejct.dueDate;
     const html = `
-    <p>
+    <p class = "para">
     ${name}${dueDate}
     <button onclick="    
     toDoList.splice(${i},1);
-    RenderToDo();">Delete</button>
+    RenderToDo();" class="buton">Delete</button>
     </p>
     `;
     toDoListHtml += html;
